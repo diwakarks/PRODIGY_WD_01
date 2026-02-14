@@ -48,6 +48,7 @@ new Chart(usersCtx, {
   },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
       title: {
@@ -76,6 +77,7 @@ new Chart(revenueCtx, {
   },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
       title: {

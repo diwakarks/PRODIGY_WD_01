@@ -279,18 +279,28 @@ body {
 
 /* CHART SECTION */
 
+/* =========================
+   CHART SECTION
+========================= */
+
 .charts-container {
   margin-top: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .chart-box {
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  width: 100%;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: 350px !important;
 }
 
 /* =========================
@@ -397,6 +407,9 @@ body {
   .about-grid,
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .charts-container {
+    grid-template-columns: 1fr;
   }
 
 }
