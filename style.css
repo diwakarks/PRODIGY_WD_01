@@ -340,3 +340,136 @@ body {
   margin-top: 60px;
   font-size: 16px;
 }
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* -------- Large Tablets (max 1200px) -------- */
+@media (max-width: 1200px) {
+
+  .products-grid,
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+}
+
+
+/* -------- Tablets (max 992px) -------- */
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .section {
+    padding: 100px 40px;
+  }
+
+  .hero {
+    padding: 100px 40px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 400px;
+    margin-top: 40px;
+  }
+
+  .products-grid,
+  .about-grid,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* -------- Mobile (max 768px) -------- */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    margin-top: 15px;
+  }
+
+  .navbar nav a {
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+
+  .products-grid,
+  .about-grid,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* -------- Small Mobile (max 480px) -------- */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+}
