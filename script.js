@@ -33,14 +33,13 @@ counters.forEach(counter => observer.observe(counter));
 
 /* USERS GROWTH LINE CHART */
 const usersCtx = document.getElementById('usersChart').getContext('2d');
-
 new Chart(usersCtx, {
   type: 'line',
   data: {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [{
-      label: 'User Growth',
-      data: [200000, 400000, 600000, 900000, 1200000, 1500000],
+      label: 'Users',
+      data: [20000, 40000, 60000, 90000, 120000, 150000],
       borderColor: '#ff4d4d',
       backgroundColor: 'rgba(255,77,77,0.1)',
       tension: 0.4,
@@ -50,13 +49,19 @@ new Chart(usersCtx, {
   options: {
     responsive: true,
     plugins: {
-      legend: { display: false }
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Monthly User Growth',
+        font: {
+          size: 18,
+          weight: 'bold'
+        }
+      }
     }
   }
 });
 
-
-/* REVENUE BAR CHART */
 const revenueCtx = document.getElementById('revenueChart').getContext('2d');
 
 new Chart(revenueCtx, {
@@ -64,7 +69,7 @@ new Chart(revenueCtx, {
   data: {
     labels: ['Q1', 'Q2', 'Q3', 'Q4'],
     datasets: [{
-      label: 'Revenue (in Lakhs)',
+      label: 'Revenue (Lakhs)',
       data: [15, 30, 45, 70],
       backgroundColor: '#3d6c48'
     }]
@@ -72,7 +77,15 @@ new Chart(revenueCtx, {
   options: {
     responsive: true,
     plugins: {
-      legend: { display: false }
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Quarterly Revenue Growth',
+        font: {
+          size: 18,
+          weight: 'bold'
+        }
+      }
     }
   }
 });
